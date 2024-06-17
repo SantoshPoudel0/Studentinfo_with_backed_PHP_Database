@@ -1,0 +1,69 @@
+/* create.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 24px;
+    color: #1877f2;
+    font-size: 24px;
+}
+
+.login-container label {
+    display: block;
+    margin: 8px 0 4px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.login-container input[type="text"],
+.login-container input[type="tel"],
+.login-container input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 14px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+}
+
+.login-container input[type="submit"] {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #155dbb;
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="tel"],
+    .login-container input[type="submit"] {
+        width: calc(100% - 16px);
+    }
+}
